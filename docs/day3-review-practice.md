@@ -21,3 +21,18 @@ Sau khi reviewer approve và CI pass, Maintainer hoặc Team Lead sẽ merge Pul
 - Pull Request cần có mô tả rõ ràng.
 - CI cần pass trước khi merge.
 - Cần ít nhất một approval trước khi merge.
+## Branch Roles
+
+- `main`: branch ổn định, dùng cho release hoặc production-ready code.
+- `develop`: branch tích hợp, nhận code từ các feature branch thông qua Pull Request.
+- `feature/*`: branch dùng để phát triển chức năng hoặc tài liệu mới.
+- `hotfix/*`: branch dùng để sửa lỗi khẩn cấp.
+- `release/*`: branch dùng để chuẩn bị phát hành phiên bản mới.
+
+## Review and Merge Rule
+
+Pull Request phải được review bởi người khác, có ít nhất một approval hợp lệ và CI phải pass trước khi được merge vào develop.
+
+## Rollback Plan
+
+Nếu Pull Request sau khi merge gây lỗi, có thể rollback bằng cách revert Pull Request hoặc revert commit liên quan.
